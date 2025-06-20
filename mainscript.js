@@ -3,7 +3,8 @@ var flag = false;
 var flag_sound = false;
 var is_admin = false;
 var number = 0;
-var items = ["mem.jpeg", "mem1.jpg","mem2.png","mem3.jpg","mem4.jpg","mem5.jpg","mem6.jpg","mem7.jpg","mem8.jpg","mem9.jpg","mem11.jpg"];
+var items_adult = ["mem.jpeg", "mem1.jpg","mem2.png","mem3.jpg","mem4.jpg","mem5.jpg","mem6.jpg","mem7.jpeg","mem8.jpg","mem9.jpg","mem10.webp","mem11.jpg","12.jpg","13.jpeg"];
+var items_kids = ["mem2.png","mem3.jpg","mem4.jpg","mem5.jpg","mem6.jpg","mem7.jpeg","mem8.jpg","mem9.jpg","mem10.webp","mem11.jpg","12.jpg","13.jpeg"];
 var sfx = new Audio("sfx.mp3");
 var kids_sfx = new Audio("kids sfx.mp3");
 var adolt_sfx = new Audio("adolt sfx.mp3");
@@ -28,7 +29,7 @@ function hide_seek_img() {
         if (document.getElementById("image").style.display == "none") {
             number = number + 1;
             document.getElementById("image").style.display = "block";
-            item = items[Math.floor(Math.random()*items.length)];
+            item = items_adult[Math.floor(Math.random()*items_adult.length)];
             document.getElementById("image").src = item;
         } else {
             document.getElementById("image").style.display = "none";
@@ -38,7 +39,8 @@ function hide_seek_img() {
         if (document.getElementById("image").style.display == "none") {
             number = number + 1;
             document.getElementById("image").style.display = "block";
-            document.getElementById("image").src = "mem2.png";
+            item = items_kids[Math.floor(Math.random()*items_kids.length)];
+            document.getElementById("image").src = item;
         } else {
             document.getElementById("image").style.display = "none";
         }

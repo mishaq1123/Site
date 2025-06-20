@@ -104,19 +104,19 @@ html, body {
     background-color: rgb(99, 99, 99);
 }
 .button_move {
-    animation: button_move 3s;
+    animation: button_move 4s;
 }
 @keyframes button_move {
     0% {
-        transform: scale(50%);
+        transform: scale(50%) translateY(100px) rotate(0deg);
     }
     50% {
-        transform: scale(100%);
+        transform: scale(100%) translateY(200px) rotate(180deg);
     }
     80% {
-        transform: scale(150%);
+        transform: scale(150%) translateY(350px) rotate(360deg);
     }
     100% {
-        transform: scale(100%);
+        transform: scale(100%) translateY(0px) rotate(0deg);
     }
 }
