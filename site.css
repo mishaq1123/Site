@@ -1,0 +1,122 @@
+.text {
+    position: absolute;
+    text-align: center;
+    left: 20%;
+    top: 20%;
+    font-size: 100px;
+    color: rgb(0, 0, 0);
+}
+.button {
+    left: 35%;
+    position: fixed;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 85px;
+    box-shadow: 0px 0px 2px 2px rgb(255, 255, 255);
+    width: 400px;
+    height: 80px;
+}
+.button:hover {
+    background-color: rgb(151, 158, 156);
+    transition: 0.5s;
+}
+.button:focus {
+    outline-color: transparent;
+    outline-style: solid;
+    box-shadow: 0 0 0 4px rgb(68, 68, 68);
+    transition: 0.3s;
+}
+.button:active {
+    background-color: rgb(99, 99, 99);
+}
+body {
+    background-color: rgb(0, 0, 0);
+    background-image: url(background.png);
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+html, body {
+    margin: 0px;
+    height: 200%;
+    width: 100%;
+}
+.image_hidden {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+
+}
+.button-1 {
+    position: absolute;
+    border: none;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 2px 2px rgb(0, 0, 0);
+    width: 92px;
+    height: 48px;
+}
+.button-1:hover {
+    background-color: rgb(151, 158, 156);
+    transition: 0.6s;
+}
+.button-1:focus {
+    outline-color: transparent;
+    outline-style: solid;
+    box-shadow: 0 0 0 4px rgb(68, 68, 68);
+    transition: 0.3s;
+}
+.button-1:active {
+    background-color: rgb(99, 99, 99);
+}
+.song_button {
+    position: absolute;
+    left: 94%;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 2px rgb(255, 255, 255);
+    width: 70px;
+    height: 70px;
+}
+.admin-button {
+    top: 395%;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 2px rgb(0, 0, 0);
+    width: 50px;
+    height: 25px;
+}
+.admin-button:hover {
+    background-color: rgb(151, 158, 156);
+    transition: 0.3s;
+}
+.admin-button:focus {
+    outline-color: transparent;
+    outline-style: solid;
+    box-shadow: 0 0 0 4px rgb(68, 68, 68);
+}
+.admin-button:active {
+    background-color: rgb(99, 99, 99);
+}
+.button_move {
+    animation: button_move 3s;
+}
+@keyframes button_move {
+    0% {
+        transform: scale(50%);
+    }
+    50% {
+        transform: scale(100%);
+    }
+    80% {
+        transform: scale(150%);
+    }
+    100% {
+        transform: scale(100%);
+    }
+}
